@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aesthetica Skin Clinic | Effortless Beauty, Timeless Glow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;600;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .asymmetric-shape {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fed65b",
+                        "on-tertiary-fixed-variant": "#41484c",
+                        "inverse-primary": "#b5c8df",
+                        "on-primary-fixed-variant": "#36485b",
+                        "surface-dim": "#d8dadc",
+                        "tertiary-fixed": "#dce3e8",
+                        "outline-variant": "#c4c6cd",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-container": "#a0a7ac",
+                        "outline": "#74777d",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed": "#091d2e",
+                        "on-surface": "#191c1e",
+                        "on-primary-container": "#96a9be",
+                        "on-surface-variant": "#43474c",
+                        "surface-tint": "#4e6073",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "primary-fixed": "#d1e4fb",
+                        "secondary": "#735c00",
+                        "on-secondary-container": "#745c00",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-background": "#191c1e",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface": "#f7f9fb",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary": "#20272b",
+                        "primary-container": "#2c3e50",
+                        "tertiary-fixed-dim": "#c0c7cc",
+                        "primary-fixed-dim": "#b5c8df",
+                        "inverse-on-surface": "#eff1f3",
+                        "tertiary-container": "#363d41",
+                        "primary": "#162839",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed": "#ffe088",
+                        "on-tertiary-fixed": "#161d20",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-surface": "#2d3133",
+                        "secondary-fixed-dim": "#e9c349",
+                        "surface-container-highest": "#e0e3e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "container-max": "1280px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Libre Caslon Text"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300">
+<div class="font-headline-md text-headline-md text-primary tracking-tight">Aesthetica Skin Clinic</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#gallery">Gallery</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-3 rounded-DEFAULT hover:bg-primary-container transition-all duration-300 transform active:scale-95">
+            Book Appointment
+        </button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[921px] min-h-[600px] flex items-center overflow-hidden px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A serene, high-end medical spa treatment room with soft cinematic lighting illuminating a patient receiving a luxurious facial treatment. The atmosphere is clinical yet deeply relaxing, with a palette of soft whites, muted slates, and warm golden undertones. Fine textures of luxury linens and state-of-the-art dermatological equipment are visible in the soft-focus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJE-0xxL9uiy1JL1oFTnB1aGvgG-fIcgl0YVAbHxwHu5TgODlmzaUvqjRSbqMKgAJ-wspTzUGQimE4dmJz58IKcSEorvpKYfpyuq3y1fXNKdXqjN797qkBayoPTvBPETzvKipR7TiA5n55Brz4c2JYLKWRwC8V_8v3x5aD0hMHq1QQVePdWugv99PnHCHJw0neoZkNi1dXzFwCUdb4vXlpSwFP_tODZQS5ald8hCPc7gGtj-sWSa897fmYxSv7UmS3vNDditj1etxf"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-6 reveal-on-scroll">
+                    Effortless Beauty,<br/>Timeless Glow
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl reveal-on-scroll" style="transition-delay: 200ms;">
+                    Experience clinical excellence led by Dr. Prachi Gupta Garg. We combine medical precision with a luxury wellness experience to reveal your skin's natural radiance.
+                </p>
+<div class="flex flex-wrap gap-6 reveal-on-scroll" style="transition-delay: 400ms;">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span class="font-label-md text-label-md text-primary">Certified Expertise</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">spa</span>
+<span class="font-label-md text-label-md text-primary">Holistic Care</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Intro Section: Dr. Prachi -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative reveal-on-scroll">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-lg shadow-sm">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A professional portrait of Dr. Prachi Gupta Garg, a leading dermatologist, standing in a bright, modern clinical environment. She wears a crisp white medical coat and conveys a warm, authoritative, and trustworthy presence. The background features subtle medicinal glass jars and a minimalist medical certificate, maintaining the clinical-luxury aesthetic with soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9-ILZms5EfJUiz8PAHkr4jKc2_HAQ6q1gi4z2YJTFvfFM4egN6_NwmucAxyx7_0KRKVYw8B6n7eRghs6HUODqX9RBFTIJF3gU9pPCLaGx5EtnqLmo1mtbrUZmcJhgB4EyerRFjQqq6-GvY2JF8-yAxZoVBnp4IjVvztflnK4uay6fckxPOQPePH39G4Mr26SV7IeFvBpfxkdPCrMiu5IOdBB6jF6DZMd1vS71BNADAu8ETKXWrXdwZh3SlLX1cN5cCbdMHQQgj6rC"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-secondary text-on-secondary p-8 hidden md:block">
+<p class="font-headline-md text-headline-md italic">"Science meets Soul."</p>
+</div>
+</div>
+<div class="md:col-span-7 space-y-8 reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="space-y-2">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Medical Director</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Dr. Prachi Gupta Garg</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        With over 15 years of specialized experience in clinical dermatology, Dr. Prachi Gupta Garg has redefined the standards of skin care in the region. Her approach prioritizes the long-term health of your skin barrier over fleeting trends.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        At Aesthetica, every treatment is a bespoke journey. We utilize cutting-edge medical technology paired with pharmaceutical-grade formulations to ensure safety and precision at every step of your transformation.
+                    </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:text-secondary transition-colors" href="#">
+                            MEET THE TEAM <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section: Bento Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface" id="services">
+<div class="text-center mb-16 space-y-4 reveal-on-scroll">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Our Expertise</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Curated Clinical Treatments</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Skin Card -->
+<div class="group relative overflow-hidden rounded-lg bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 reveal-on-scroll">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A macro close-up of a person's glowing, flawless skin being gently touched by a clinical pipette dispensing a clear, viscous serum. The lighting is high-key and surgical, highlighting the dewy texture and healthy pores. The color palette is dominated by sterile whites and soft flesh tones, evoking medical precision and pure hydration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBojmsuqLWHpjmYLaXen2TsXZSU287So5ZrNyz4Zn7VpTlfN2tQ9OvrLb676yBryR7qnYkqUUh3T1LxvTVMjI4FRsaeifx5Xah2qe3PjMRCcxFlhr5ltaU3TtsbWcWKn4UNJIFIPZAJUTPpayBS8QetYUXywtOJN05_iG_WUv15ALTXq29UA2ghgdjErBgj_7LFqIk4BgIlHsWTrr1Rz34Bc9xPGjLgN8HbCH9AdkF7Sx_z6o74tvreC0M_kVvXaAfrkJESwAJv12Bo"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-8 text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Advanced Skin Care</h3>
+<p class="font-body-md text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">Laser therapies, chemical peels, and clinical facials tailored to your unique biology.</p>
+</div>
+</div>
+<!-- Hair Card -->
+<div class="group relative overflow-hidden rounded-lg bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 reveal-on-scroll" style="transition-delay: 150ms;">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A side profile of healthy, lustrous long hair being examined under a medical magnifying light. The strands catch the clinical cool-white light, showing exceptional shine and strength. The setting is a clean, modern dermatology lab with stainless steel and white surfaces, emphasizing the scientific approach to hair restoration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARctpnWBN5DJr5NylBP8nmfOTs_ObK9sWZkWqaH4PbpMS4aJaE2SmItefb5brawPu4nYArDBPJijqlTvARaBsHZydTGPnYn3kv-vXs2TLrNbsMH3SkFkhW3ZfB3GOFU3CsXzkQE5rMXu4jzqM8Rzbs-634RCEw_a9xbHPW4mDijBK509oHs8M9dq6TD6eWqKXCbNg3u9ReYzeVgci61cVIjN6f_jF56hqAxLANg-6DjCyww8ta9-Sm00edR7otu5eJD-rD0YhpFZ98"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-8 text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Hair Restoration</h3>
+<p class="font-body-md text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">PRP therapy and medical-grade solutions for hair thinning and scalp health.</p>
+</div>
+</div>
+<!-- PMU Card -->
+<div class="group relative overflow-hidden rounded-lg bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 reveal-on-scroll" style="transition-delay: 300ms;">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A focused close-up of a permanent makeup procedure being performed on eyebrows with a precise, sterile tool. The artist's gloved hands are visible, demonstrating expert control. The background is a soft-focus clinical setting with warm, ambient lighting that softens the medical intensity while maintaining a high-end feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPsTKekAwcQOd6txhoq2kYWgFyGF6Hl8pJ-OItUU_w574ow5Hugnt1mZ9UO_f9yEdwDxOU3PJEKIEoZtDrTXogiw1rUICny0KO41F7J-zs8pFfeznZvtVq6BKgNUX_5rCwDuIsNs_TPjBr9QsHy31sxz2Bi71ZKolusQ5HFH6W2KlZbHvVyRPHWj9QlQayzHq0hKJX4zJz7nBlLPuJ8MkdTuZpX54PSDpE-snqMnfPB0A0UTip4ulit9f1pZBuQmcim87wEUP37_GN"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-8 text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Permanent Makeup</h3>
+<p class="font-body-md text-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">Symmetry and elegance through microblading and lip blush treatments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low overflow-hidden relative">
+<div class="absolute top-0 right-0 p-24 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]">format_quote</span>
+</div>
+<div class="max-w-4xl mx-auto text-center space-y-12 reveal-on-scroll">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Testimonials</span>
+<div class="space-y-6">
+<p class="font-headline-lg text-headline-lg text-primary italic leading-tight">
+                        "The transformation wasn't just on the surface. Dr. Prachi and her team restored my confidence with their scientific precision and incredible warmth."
+                    </p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up headshot of a radiant, smiling woman with clear, healthy skin. She is looking slightly off-camera with a look of pure confidence and satisfaction. The lighting is soft and natural, emphasizing the subtle glow of her complexion against a blurred outdoor background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC39UTFafTV6rc6sqTTFAKj2S_7QZJeOGTd-v4rXI4ms-uX3I04mjAGuihjYyS8VShfJ1tmyXZm7hlSCCDeVYQfyLiYoT8t8-aPguwlGWGxJ_xkMtLR_wGlSkQky0v-BjVO4tfseQ43ewXia1ZFnfKr5VrHtPOL5srJeKzk2EbRpN34zpuX2kObpihnjdy2JFk4Pk8yLPDWTIQbF1mV091L_2tx8FfflcnhJMsygFVCO3q_VvmBh4-eqpJehs98knUDPXAAVwbAVv1x"/>
+</div>
+<div class="text-left">
+<p class="font-label-md text-label-md text-primary">Ananya Sharma</p>
+<p class="text-sm text-on-surface-variant">Skin Rejuvenation Patient</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="reveal-on-scroll">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">Frequently Asked Questions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        We believe in transparency. Here are answers to the most common questions about our clinical approach.
+                    </p>
+<div class="aspect-video rounded-lg overflow-hidden shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A wide-angle shot of the Aesthetica Skin Clinic reception area. The space is wide and airy with high ceilings, minimalist white furniture, and large windows letting in abundance of natural light. Subtle touches of gold and slate blue accents create a modern, clinical-luxury atmosphere. A friendly receptionist is seen in the distance, ready to welcome patients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4qUcKQj9wHG42jpKhrTPYT_dqUnzWA5fcG99uJeSro9SZCNMcXomLaQ7mbandnBDTMtJjdCX9sxHX42vzezFHnSnIEqa9mjKQ3wTd8MXBUXDSgyIBUIvAY4L-bg-CO2Q-M6_lVD4okKZR4HRQmYd0ARYdQU69zyZb63YoPx7x7F4ZES0xe-n3abjW12HMLwoRCHHSMxqHXLwkaiSsp1dEMu-fC_ibqRDalBbT-S2nME29RnoRw4m974WP_QLbjIK-FvhHgvT9gI5i"/>
+</div>
+</div>
+<div class="space-y-4 reveal-on-scroll" style="transition-delay: 200ms;">
+<!-- Accordion Item 1 -->
+<div class="border-b border-outline-variant py-6 group cursor-pointer">
+<div class="flex justify-between items-center" onclick="this.parentElement.classList.toggle('active')">
+<h4 class="font-headline-md text-headline-md text-primary">Is there any downtime?</h4>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-40 group-[.active]:mt-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Most of our treatments are designed to be minimally invasive. Depending on the procedure, downtime can range from zero to 48 hours. Your specialist will provide a detailed post-care guide.
+                            </p>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="border-b border-outline-variant py-6 group cursor-pointer active">
+<div class="flex justify-between items-center" onclick="this.parentElement.classList.toggle('active')">
+<h4 class="font-headline-md text-headline-md text-primary">Are treatments safe?</h4>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-40 group-[.active]:mt-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Safety is our priority. All treatments are FDA-approved and performed under strict medical supervision using sterile equipment and clinical protocols.
+                            </p>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="border-b border-outline-variant py-6 group cursor-pointer">
+<div class="flex justify-between items-center" onclick="this.parentElement.classList.toggle('active')">
+<h4 class="font-headline-md text-headline-md text-primary">How soon will I see results?</h4>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-[.active]:rotate-180">expand_more</span>
+</div>
+<div class="max-h-0 overflow-hidden transition-all duration-300 group-[.active]:max-h-40 group-[.active]:mt-4">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Some treatments like hydration facials show immediate glow, while clinical skin cycles typically require 2-4 weeks to reveal cellular improvement.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-primary-container text-on-primary" id="contact">
+<div class="max-w-4xl mx-auto reveal-on-scroll">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg mb-4">Start Your Skin Journey</h2>
+<p class="font-body-lg text-body-lg opacity-80">Book a consultation with Dr. Prachi and discover the Aesthetica difference.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-surface-container-highest/10 p-10 backdrop-blur-sm rounded-lg border border-white/10">
+<div class="space-y-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md opacity-70">FULL NAME</label>
+<input class="bg-transparent border-0 border-b border-white/20 py-3 focus:ring-0 focus:border-secondary transition-colors" placeholder="Enter your name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md opacity-70">EMAIL ADDRESS</label>
+<input class="bg-transparent border-0 border-b border-white/20 py-3 focus:ring-0 focus:border-secondary transition-colors" placeholder="Email@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md opacity-70">TREATMENT INTEREST</label>
+<select class="bg-transparent border-0 border-b border-white/20 py-3 focus:ring-0 focus:border-secondary transition-colors appearance-none">
+<option class="text-on-surface">Advanced Skin Care</option>
+<option class="text-on-surface">Hair Restoration</option>
+<option class="text-on-surface">Permanent Makeup</option>
+<option class="text-on-surface">Other Consultation</option>
+</select>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-md text-label-md py-5 rounded-DEFAULT hover:bg-secondary-fixed transition-all duration-300 mt-4" type="submit">
+                            REQUEST CONSULTATION
+                        </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-md space-y-6 mb-12 md:mb-0">
+<div class="font-headline-md text-headline-md text-primary">Aesthetica Skin Clinic</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Expert dermatological care led by Dr. Prachi Gupta Garg. Precision treatments for timeless beauty.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-sm">location_on</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-primary uppercase">Quick Links</p>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Our Services</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Success Stories</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-primary uppercase">Legal</p>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Location</a></li>
+</ul>
+</div>
+</div>
+<div class="w-full mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant text-sm">
+<p>© 2024 Aesthetica Skin Clinic. All rights reserved.</p>
+<p>Designed with clinical precision.</p>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Nav shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4', 'shadow-md');
+                nav.classList.remove('py-6', 'shadow-sm');
+            } else {
+                nav.classList.add('py-6', 'shadow-sm');
+                nav.classList.remove('py-4', 'shadow-md');
+            }
+        });
+    </script>
+        <a
+href="https://wa.me/917709736251"
+target="_blank"
+class="whatsapp-float">
+
+💬
+
+        </a>
+</body></html>
