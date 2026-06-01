@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Advanced Skincare treatments at Aesthetica — laser therapy, chemical peels, clinical facials, and more, led by Dr. Prachi Gupta Garg in Punawale, Pune."/>
+    <title>Advanced Skincare | Aesthetica Skin Clinic</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    <!-- Path is ../css/ because this page lives inside /pages/ -->
+    <link rel="stylesheet" href="../css/theme.css"/>
+</head>
+<body>
+
+<!-- ═══ NAVIGATION (identical on all pages, update paths in js/main.js) ═══ -->
+<header>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-logo">Aesthetica Skin Clinic</a>
+
+        <div class="nav-links">
+            <a href="../index.html#about">About</a>
+            <div class="nav-dropdown">
+                <a href="../index.html#services" class="active" style="display:flex;align-items:center;gap:4px;">
+                    Services <span class="material-symbols-outlined" style="font-size:16px">expand_more</span>
+                </a>
+                <div class="nav-dropdown-menu" role="menu">
+                    <a href="skincare.html"  role="menuitem" style="font-weight:700;color:var(--color-secondary);">Advanced Skincare</a>
+                    <a href="haircare.html"  role="menuitem">Hair Restoration</a>
+                    <a href="makeup.html"    role="menuitem">Permanent Makeup</a>
+                </div>
+            </div>
+            <a href="../index.html#gallery">Gallery</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="#booking" class="btn-primary" style="margin-left:1rem;">Book Appointment</a>
+    </nav>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html#about">About</a>
+        <a href="skincare.html" style="color:var(--color-secondary);">Advanced Skincare</a>
+        <a href="haircare.html">Hair Restoration</a>
+        <a href="makeup.html">Permanent Makeup</a>
+        <a href="../index.html#gallery">Gallery</a>
+        <a href="#booking" class="btn-primary" style="align-self:flex-start;margin-top:1rem;">Book Appointment</a>
+    </nav>
+</header>
+
+<main style="padding-top:72px;">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" style="min-height:80vh;">
+        <div class="hero__bg">
+            <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBojmsuqLWHpjmYLaXen2TsXZSU287So5ZrNyz4Zn7VpTlfN2tQ9OvrLb676yBryR7qnYkqUUh3T1LxvTVMjI4FRsaeifx5Xah2qe3PjMRCcxFlhr5ltaU3TtsbWcWKn4UNJIFIPZAJUTPpayBS8QetYUXywtOJN05_iG_WUv15ALTXq29UA2ghgdjErBgj_7LFqIk4BgIlHsWTrr1Rz34Bc9xPGjLgN8HbCH9AdkF7Sx_z6o74tvreC0M_kVvXaAfrkJESwAJv12Bo"
+                alt="Advanced clinical skin care treatment at Aesthetica"
+                loading="eager"
+            />
+            <div class="hero__overlay hero-overlay-left"></div>
+        </div>
+
+        <div class="hero__content container" style="padding-block:4rem;color:white;">
+            <nav aria-label="Breadcrumb" class="service-breadcrumb">
+                <a href="../index.html">Home</a>
+                <span class="material-symbols-outlined" style="font-size:14px;">chevron_right</span>
+                <span>Advanced Skincare</span>
+            </nav>
+            <span class="hero-badge">Specialized Skin Care</span>
+            <h1 class="text-display-lg" style="max-width:600px;margin-bottom:1.5rem;">Clinical Precision for Radiant Skin.</h1>
+            <p class="text-body-lg" style="max-width:480px;margin-bottom:2rem;color:rgba(255,255,255,0.9);">
+                Experience advanced dermatological treatments led by Dr. Prachi Gupta Garg — tailored to your skin's unique biology.
+            </p>
+            <a href="#booking" class="btn-secondary">Book a Skin Consultation</a>
+        </div>
+    </section>
+
+    <!-- ═══ SERVICES BENTO GRID ═══ -->
+    <section class="section-gap bg-surface-low">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom:4rem;">
+                <span class="text-eyebrow" style="display:block;margin-bottom:0.75rem;">What We Offer</span>
+                <h2 class="text-headline-lg text-primary">Our Skincare Treatments</h2>
+            </div>
+
+            <div class="grid-3 bento-grid cards-grid">
+
+                <div class="bento-card">
+                    <div style="aspect-ratio:4/3;overflow:hidden;">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBojmsuqLWHpjmYLaXen2TsXZSU287So5ZrNyz4Zn7VpTlfN2tQ9OvrLb676yBryR7qnYkqUUh3T1LxvTVMjI4FRsaeifx5Xah2qe3PjMRCcxFlhr5ltaU3TtsbWcWKn4UNJIFIPZAJUTPpayBS8QetYUXywtOJN05_iG_WUv15ALTXq29UA2ghgdjErBgj_7LFqIk4BgIlHsWTrr1Rz34Bc9xPGjLgN8HbCH9AdkF7Sx_z6o74tvreC0M_kVvXaAfrkJESwAJv12Bo"
+                            alt="Laser skin resurfacing treatment" style="width:100%;height:100%;object-fit:cover;" loading="lazy"/>
+                    </div>
+                    <div style="padding:1.75rem;">
+                        <span class="material-symbols-outlined text-secondary" style="margin-bottom:0.75rem;font-size:2rem;">flash_on</span>
+                        <h3 class="text-headline-md text-primary" style="margin-bottom:0.75rem;">Laser Resurfacing</h3>
+                        <p class="text-body-md text-muted">Precision laser treatments to diminish scars, pigmentation, and signs of aging — revealing fresher, younger-looking skin.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <div style="aspect-ratio:4/3;overflow:hidden;">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJE-0xxL9uiy1JL1oFTnB1aGvgG-fIcgl0YVAbHxwHu5TgODlmzaUvqjRSbqMKgAJ-wspTzUGQimE4dmJz58IKcSEorvpKYfpyuq3y1fXNKdXqjN797qkBayoPTvBPETzvKipR7TiA5n55Brz4c2JYLKWRwC8V_8v3x5aD0hMHq1QQVePdWugv99PnHCHJw0neoZkNi1dXzFwCUdb4vXlpSwFP_tODZQS5ald8hCPc7gGtj-sWSa897fmYxSv7UmS3vNDditj1etxf"
+                            alt="Chemical peel treatment" style="width:100%;height:100%;object-fit:cover;" loading="lazy"/>
+                    </div>
+                    <div style="padding:1.75rem;">
+                        <span class="material-symbols-outlined text-secondary" style="margin-bottom:0.75rem;font-size:2rem;">water_drop</span>
+                        <h3 class="text-headline-md text-primary" style="margin-bottom:0.75rem;">Chemical Peels</h3>
+                        <p class="text-body-md text-muted">Pharmaceutical-grade peels for deep exfoliation, targeting dullness, uneven texture, and hyperpigmentation effectively.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <div style="aspect-ratio:4/3;overflow:hidden;">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWyx6stLEiudxLZMcdxTpEwHQL5GEGSK1HYfvgk_7O8XmoSjoFzHi81mN_7ysB5Si6LY3FVpA8E3APXAMkAD76Cd_NIBvP_cAZ4vQLm2oFlqPOE8xLFPtFlyCLj-jNPrebDPje-YljJYvv5PKjwOhTZVfa1gh9MPmvCO0H-GgXdHcUe4uJXyvJflwf0MuEUb7Ym6Gto5NDykquGlAE6wvw8Ru2_p5o2QPDe01a1TC7Yhe-O_P9un3GyoTNH4W4uA1EN-YxPr-AV-t1"
+                            alt="Clinical facial treatment" style="width:100%;height:100%;object-fit:cover;" loading="lazy"/>
+                    </div>
+                    <div style="padding:1.75rem;">
+                        <span class="material-symbols-outlined text-secondary" style="margin-bottom:0.75rem;font-size:2rem;">spa</span>
+                        <h3 class="text-headline-md text-primary" style="margin-bottom:0.75rem;">Clinical Facials</h3>
+                        <p class="text-body-md text-muted">Medical-grade facials combining hydration, extractions, and actives to deliver visible results from the very first session.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <div style="padding:1.75rem;height:100%;display:flex;flex-direction:column;justify-content:space-between;">
+                        <div>
+                            <span class="material-symbols-outlined text-secondary" style="margin-bottom:0.75rem;font-size:2rem;">auto_fix_high</span>
+                            <h3 class="text-headline-md text-primary" style="margin-bottom:0.75rem;">Microneedling</h3>
+                            <p class="text-body-md text-muted">Collagen induction therapy using precision micro-channels to rejuvenate skin texture, reduce fine lines and scars.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <div style="padding:1.75rem;height:100%;display:flex;flex-direction:column;justify-content:space-between;">
+                        <div>
+                            <span class="material-symbols-outlined text-secondary" style="margin-bottom:0.75rem;font-size:2rem;">brightness_high</span>
+                            <h3 class="text-headline-md text-primary" style="margin-bottom:0.75rem;">Skin Brightening</h3>
+                            <p class="text-body-md text-muted">Targeted treatments to correct pigmentation, sun damage, and melanin imbalances for an even, luminous complexion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card" style="background:var(--color-primary);display:flex;flex-direction:column;justify-content:center;padding:2rem;">
+                    <p class="text-headline-md text-italic" style="color:rgba(255,255,255,0.85);margin-bottom:1.5rem;">"Every treatment at Aesthetica is a bespoke journey — never a one-size-fits-all protocol."</p>
+                    <p class="text-label-md" style="color:var(--color-secondary-fixed-dim);">— Dr. Prachi Gupta Garg</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ HOW IT WORKS ═══ -->
+    <section class="section-gap bg-white">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom:4rem;">
+                <span class="text-eyebrow" style="display:block;margin-bottom:0.75rem;">Your Journey</span>
+                <h2 class="text-headline-lg text-primary">The Aesthetica Process</h2>
+            </div>
+            <div class="grid-4 cards-grid">
+                <div class="reveal" style="text-align:center;padding:1.5rem;">
+                    <div class="step-number" style="margin:0 auto 1rem;">01</div>
+                    <h4 class="text-headline-md text-primary" style="margin-bottom:0.5rem;">Consultation</h4>
+                    <p class="text-body-md text-muted">In-depth skin analysis with Dr. Prachi to understand your goals and medical history.</p>
+                </div>
+                <div class="reveal reveal-delay-1" style="text-align:center;padding:1.5rem;">
+                    <div class="step-number" style="margin:0 auto 1rem;">02</div>
+                    <h4 class="text-headline-md text-primary" style="margin-bottom:0.5rem;">Skin Mapping</h4>
+                    <p class="text-body-md text-muted">Clinical imaging and assessment to identify underlying skin conditions precisely.</p>
+                </div>
+                <div class="reveal reveal-delay-2" style="text-align:center;padding:1.5rem;">
+                    <div class="step-number" style="margin:0 auto 1rem;">03</div>
+                    <h4 class="text-headline-md text-primary" style="margin-bottom:0.5rem;">Treatment</h4>
+                    <p class="text-body-md text-muted">Expert administration of your personalized protocol in our sterile clinical environment.</p>
+                </div>
+                <div class="reveal reveal-delay-3" style="text-align:center;padding:1.5rem;">
+                    <div class="step-number" style="margin:0 auto 1rem;">04</div>
+                    <h4 class="text-headline-md text-primary" style="margin-bottom:0.5rem;">Aftercare</h4>
+                    <p class="text-body-md text-muted">A tailored post-treatment kit and follow-up schedule to maximize and maintain your results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TESTIMONIAL ═══ -->
+    <section class="section-gap bg-surface-low">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom:3rem;">
+                <span class="text-eyebrow" style="display:block;margin-bottom:0.75rem;">Patient Stories</span>
+                <h2 class="text-headline-lg text-primary">Real Results, Real Confidence</h2>
+            </div>
+            <div class="grid-3 cards-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                    </div>
+                    <blockquote style="font-family:var(--font-display);font-style:italic;font-size:1.1rem;color:var(--color-primary);margin-bottom:1.25rem;line-height:1.6;">
+                        "My skin has never looked better. The chemical peel protocol completely transformed my complexion in just 3 sessions."
+                    </blockquote>
+                    <p class="text-label-md text-primary">Priya K.</p>
+                    <p style="font-size:12px;color:var(--color-on-surface-variant);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;">Chemical Peel Patient</p>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="testimonial-stars">
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                    </div>
+                    <blockquote style="font-family:var(--font-display);font-style:italic;font-size:1.1rem;color:var(--color-primary);margin-bottom:1.25rem;line-height:1.6;">
+                        "Dr. Prachi genuinely listened to my concerns. The laser treatment gave me results I'd given up hoping for."
+                    </blockquote>
+                    <p class="text-label-md text-primary">Ananya S.</p>
+                    <p style="font-size:12px;color:var(--color-on-surface-variant);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;">Laser Resurfacing Patient</p>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="testimonial-stars">
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+                    </div>
+                    <blockquote style="font-family:var(--font-display);font-style:italic;font-size:1.1rem;color:var(--color-primary);margin-bottom:1.25rem;line-height:1.6;">
+                        "The clinical facial was deeply relaxing and the aftercare guidance was exceptional. I keep coming back every month."
+                    </blockquote>
+                    <p class="text-label-md text-primary">Roshni V.</p>
+                    <p style="font-size:12px;color:var(--color-on-surface-variant);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px;">Clinical Facial Patient</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ BOOKING FORM ═══ -->
+    <section id="booking" class="section-gap bg-white">
+        <div class="container">
+            <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:4rem;overflow:hidden;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);" class="grid-2">
+                <div style="padding:3rem 2.5rem;background:white;">
+                    <h2 class="text-headline-lg text-primary text-italic" style="margin-bottom:1rem;">Book Your Skin Consultation</h2>
+                    <p class="text-body-md text-muted" style="margin-bottom:2.5rem;max-width:380px;">Take the first step towards luminous skin. Dr. Prachi will personally review your intake and contact you to confirm your appointment.</p>
+                    <form class="booking-form" style="display:flex;flex-direction:column;gap:1.5rem;">
+                        <div class="grid-2" style="gap:1.5rem;">
+                            <div class="form-field">
+                                <label for="name-sk">Full Name</label>
+                                <input id="name-sk" name="name" type="text" placeholder="Your name" required/>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone-sk">Phone Number</label>
+                                <input id="phone-sk" name="phone" type="tel" placeholder="+91 0000 000 000"/>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="service-sk">Treatment Interest</label>
+                            <select id="service-sk" name="service">
+                                <option>Laser Resurfacing</option>
+                                <option>Chemical Peel</option>
+                                <option>Clinical Facial</option>
+                                <option>Microneedling</option>
+                                <option>General Consultation</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary" style="align-self:flex-start;display:flex;align-items:center;gap:0.5rem;padding:1rem 2.5rem;">
+                            Request Appointment <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </form>
+                </div>
+                <div style="background:var(--color-primary-container);padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:center;gap:2rem;">
+                    <h3 class="text-headline-md" style="color:white;">Why choose Aesthetica?</h3>
+                    <ul style="display:flex;flex-direction:column;gap:1.25rem;">
+                        <li style="display:flex;align-items:flex-start;gap:0.75rem;color:rgba(255,255,255,0.85);">
+                            <span class="material-symbols-outlined" style="color:var(--color-secondary-fixed-dim);margin-top:2px;">verified</span>
+                            <span>Treatments supervised by Dr. Prachi Gupta Garg, MD Dermatology</span>
+                        </li>
+                        <li style="display:flex;align-items:flex-start;gap:0.75rem;color:rgba(255,255,255,0.85);">
+                            <span class="material-symbols-outlined" style="color:var(--color-secondary-fixed-dim);margin-top:2px;">biotech</span>
+                            <span>FDA-approved procedures with pharmaceutical-grade products</span>
+                        </li>
+                        <li style="display:flex;align-items:flex-start;gap:0.75rem;color:rgba(255,255,255,0.85);">
+                            <span class="material-symbols-outlined" style="color:var(--color-secondary-fixed-dim);margin-top:2px;">person_check</span>
+                            <span>Personalized protocols — never a cookie-cutter approach</span>
+                        </li>
+                        <li style="display:flex;align-items:flex-start;gap:0.75rem;color:rgba(255,255,255,0.85);">
+                            <span class="material-symbols-outlined" style="color:var(--color-secondary-fixed-dim);margin-top:2px;">schedule</span>
+                            <span>Mon – Sat: 10am – 8pm · Punawale, Pune</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ MORE SERVICES CTA ═══ -->
+    <section class="section-gap bg-surface-low">
+        <div class="container text-center">
+            <h2 class="text-headline-lg text-primary reveal" style="margin-bottom:1rem;">Explore Our Other Services</h2>
+            <p class="text-body-lg text-muted reveal reveal-delay-1" style="margin-bottom:2.5rem;">Aesthetica offers a full spectrum of medical aesthetic treatments.</p>
+            <div style="display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;" class="reveal reveal-delay-2">
+                <a href="haircare.html" class="btn-primary">Hair Restoration</a>
+                <a href="makeup.html"   class="btn-outline">Permanent Makeup</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="nav-logo">Aesthetica Skin Clinic</a>
+                <p>Expert dermatological care led by Dr. Prachi Gupta Garg in Punawale, Pune.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><span class="material-symbols-outlined">share</span></a>
+                    <a href="#" aria-label="Email"><span class="material-symbols-outlined">mail</span></a>
+                    <a href="#" aria-label="Location"><span class="material-symbols-outlined">location_on</span></a>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="skincare.html" style="color:var(--color-secondary);">Advanced Skincare</a></li>
+                        <li><a href="haircare.html">Hair Restoration</a></li>
+                        <li><a href="makeup.html">Permanent Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="../index.html#about">About Dr. Prachi</a></li>
+                        <li><a href="../index.html#contact">Book Appointment</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="grid-column:span 2;">
+                    <h5>Clinic</h5>
+                    <ul>
+                        <li class="contact-item"><span class="material-symbols-outlined">location_on</span> Punawale, Pune, Maharashtra</li>
+                        <li class="contact-item"><span class="material-symbols-outlined">call</span> +91 9876 543 210</li>
+                        <li class="contact-item"><span class="material-symbols-outlined">schedule</span> Mon – Sat: 10am – 8pm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Aesthetica Skin Clinic. All rights reserved.</p>
+            <p>Dr. Prachi Gupta Garg · Punawale, Pune</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
